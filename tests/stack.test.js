@@ -22,7 +22,7 @@ describe("Stack", () => {
 
     expect(stack.peek()).toEqual(9);
   });
-  
+
   test("check if stack is empty", () => {
     const stack = new Stack();
     expect(stack.isEmpty()).toBeTruthy();
@@ -30,7 +30,7 @@ describe("Stack", () => {
     stack.push(4);
 
     expect(stack.isEmpty()).toBeFalsy();
-  });   
+  });
 
   test("it should pop from the stack", () => {
     const stack = new Stack();
