@@ -1,0 +1,17 @@
+{
+  "name": "data-structures-in",
+  "version": "1.0.0",
+  "description": "Data Structures written in JavaScript",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Idrees Dargahwala",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
