@@ -1,12 +1,12 @@
 function outer(input) {
-    let outerScopedVariable = [];
+  let outerScopedVariable = [];
 
-    function helper(helperInput) {
-        //modify outerScopedVariable
-        helper(helperInput--);
-    }
+  function helper(helperInput) {
+    //modify outerScopedVariable
+    helper(helperInput--);
+  }
 
-    helper(input);
+  helper(input);
 
-    return outerScopedVariable;
+  return outerScopedVariable;
 }
