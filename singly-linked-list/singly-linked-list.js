@@ -65,6 +65,19 @@ class SinglyLinkedList {
       this.head = newNode;
     }
   }
+
+  get(index) {
+    if (index < 0 || index >= this.length) return null;
+    let currentNode = this.head;
+    let count = 0;
+    while (currentNode) {
+      if (count === index) {
+        return currentNode;
+      }
+      count++;
+      currentNode = currentNode.next;
+    }
+  }
 }
 
 let sll = new SinglyLinkedList();
@@ -73,5 +86,5 @@ sll.push(3);
 sll.push(7);
 sll.push(8);
 sll.pop();
-sll.shift();
-console.log(sll);
+let res = sll.get(2);
+console.log(res);
