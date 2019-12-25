@@ -78,6 +78,16 @@ class SinglyLinkedList {
       currentNode = currentNode.next;
     }
   }
+
+  set(index, val) {
+    let node = this.get(index);
+    if (node) {
+      node.val = val;
+      return true;
+    }
+
+    return false;
+  }
 }
 
 let sll = new SinglyLinkedList();
@@ -86,5 +96,6 @@ sll.push(3);
 sll.push(7);
 sll.push(8);
 sll.pop();
+sll.set(2, 10);
 let res = sll.get(2);
 console.log(res);
